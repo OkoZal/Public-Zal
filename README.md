@@ -1,2 +1,1 @@
-# Public-Zal
-Mert igen
+# Public profile for the webpage
