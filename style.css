@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playpen+Sans:wght@200;300&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+body {
+    background: linear-gradient(white, white, rgba(26, 80, 118, 0.195), rgb(26, 80, 118));
+    background-size: cover;
+    font-size: 24px;
+    font-family: 'Playpen Sans', cursive;
+    color: black;
+    font-weight: 300;
+    min-height: 100vh;
+}
+#top-menu {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+#cim{
+    margin-top: 3.5%;
+    font-size: 48px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: rgb(26, 80, 118);
+}
+#cim span{
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    animation: cim 2s infinite;
+    animation-delay: calc(.1s * var(--i));
+}
+@keyframes cim{
+    0%,40%,100% {
+        transform: translateY(0)
+    }
+    20% {
+        transform: translateY(-7px)
+    }
+}
+#cim2{
+    margin-top: 8%;
+    font-size: 76px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: rgb(255, 123, 0);
+}
+#cim2 span{
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    animation: cim2 2s infinite;
+    animation-delay: calc(.1s * var(--i));
+}
+@keyframes cim2{
+    0%,40%,100% {
+        transform: translateY(0)
+    }
+    20% {
+        transform: translateY(-7px)
+    }
+}
+#link{
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    padding: 10px;
+}
+#link a{
+    text-decoration: none;
+    color: rgba(26, 80, 118, 0.9);
+    font-size: 34px;
+}
+#link a:hover{
+    color: rgba(255, 123, 0, 0.9);
+}
+#link a:active{
+    opacity: 0.7;
+}
+
+#content .inline{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+}
+#content .amod{
+    color: rgba(26, 80, 118, 0.9);
+    position: absolute;
+    font-family: 'Playpen Sans', cursive;;
+    font-size: 42px;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+#content #amod1{
+    margin-left: -4.2%;
+    top: 44%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+}
+#content #amod2{
+    margin-left: 1%;
+    top: 56%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+}
+#content #amod3{
+    margin-left: 0.6%;
+    top: 68%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+}
+#content #amod1 a, #amod2 a, #amod3 a{
+    text-decoration: none;
+    color: rgb(26, 80, 118);
+}
+#content .ikon{
+    color: rgb(26, 80, 118);
+    position: absolute;
+    font-size: 50px;
+    transition: ease-out 0.4s;
+    border: 2px solid rgb(255, 123, 0);
+    box-shadow: inset 0 0 0 0 rgb(255, 123, 0);
+    border-radius: 4px;
+}
+#content #ikon1{
+    padding: 11px 30px;
+    top: 44%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+}
+#content #ikon2{
+    padding: 11px 24px;
+    top: 56%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+}
+#content #ikon3{
+    padding: 11px 24px;
+    top: 68%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+}
+#content .ikon:hover{   
+    box-shadow: inset 0 0 200px 0 rgb(255, 123, 0);
+    color: white;
+    border: none;
+}
+#content .ikon .robot{
+    position: relative;
+    z-index: 10000;
+}
+#content .ikon .fire{
+    position: absolute;
+    color: rgba(255, 123, 0, 0.8);
+    font-size: 70px;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#content h4:hover{
+    color: rgb(255, 123, 0);
+}
+#content .mod a:active:not(.ikon){
+    opacity: 0.7;
+    color: rgb(255, 123, 0);
+}
+#foot{
+    position: absolute;
+    top: 94%;
+    left: 1%;
+}
+#foot p{
+    color: rgba(255, 123, 0, 0.6);
+    font-size: 22px;
+}
+#foot p:hover{
+    color: rgb(255, 123, 0);
+}
